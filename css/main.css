@@ -1,71 +1,96 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
-  font-size: 62.5%;
-  font-family: "Open Sans", sans-serif;
-  background-color: #77628C;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+    background-color: #77628C;
 }
 
 .material-icons {
-  vertical-align: middle !important;
+    vertical-align: middle !important;
 }
 
 .wrapper {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
 
 }
 
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.link-sidebar {
+    z-index: 10000;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.link-sidebar-main {
+
+}
+
+.link-sidebar-main>ul>li>a {
+    color: #77628C !important;
+}
+
+.link-sidebar-footer>ul>li>a {
+    color: #77628C !important;
+}
+
+
 .inline-list {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
 }
 
 .inline-list>li {
-   display: inline;
+    display: inline;
 }
 
-.hide {
-  display: none;
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
 }
 
 .avatar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  background: url("../img/avatar-graffiti.jpg") no-repeat center top;
-  background-size: 300px auto;
-  border: 5px solid #fff;
-  border-radius: 100%;
+    z-index:1;
+    width: 300px;
+    height: 300px;
+    background: url("../img/avatar-graffiti.jpg") no-repeat center top;
+    background-size: 300px auto;
+    border: 5px solid #fff;
+    border-radius: 100%;
 
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
 }
 
 a {
-  font-size: 1.8rem;
-  color: #fff;
-  text-decoration: none;
-  padding: 0 5px 0 5px;
-}
-
-a:hover {
-  color: #ccc;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px 0 5px;
 }
