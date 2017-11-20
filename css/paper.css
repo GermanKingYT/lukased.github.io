@@ -86,13 +86,13 @@ footer {
   background-color: #77628C;
 }
 
-.footerCenter {
+.footer-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 
-.footerCenter>a {
+.footer-center>a {
   color: #fff;
 }
