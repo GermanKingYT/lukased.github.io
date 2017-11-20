@@ -1,3 +1,5 @@
+/* </> Lukas Eder */
+
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +69,13 @@ a {
     font-size: 16px;
     font-size: 1.6rem;
     color: #77628C;
+}
+
+span {
+    padding: 5px 10px;
+    background: #77628C;
+    color: #fff;
+    border-radius: 45px;
 }
 
 footer {
