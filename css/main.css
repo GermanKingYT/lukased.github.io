@@ -1,5 +1,7 @@
 /* </> Lukas Eder */
 
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +15,7 @@ html, body {
     background-color: #77628C;
 }
 
-a {
-    font-size: 1.8rem;
-    color: #fff;
-    text-decoration: none;
-    padding: 0 5px 0 5px;
-    cursor: pointer;
-}
+/* Tools */
 
 .inline-list {
     display: inline-block;
@@ -40,6 +36,7 @@ a {
     text-align: left;
 }
 
+/* Cookies */
 
 .cookie {
     display: none;
@@ -84,11 +81,15 @@ a {
     font-size: 1.6rem;
 }
 
+/* Wrapper */
+
 .wrapper {
     width: 100%;
     height: 100vh;
 
 }
+
+/* Main */
 
 main {
     position: absolute;
@@ -107,6 +108,8 @@ main {
     border-radius: 100%;
 }
 
+/* Footer */
+
 footer {
     position: absolute;
     bottom: 0;
@@ -114,6 +117,18 @@ footer {
     transform: translateX(-50%);
     margin-bottom: 10px;
 }
+
+
+footer>ul>li>a {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+
 
 .link-sidebar {
     z-index: 10000;
@@ -126,10 +141,15 @@ footer {
 }
 
 .link-sidebar-main>ul>li>a {
+    text-decoration: none;
+    font-size: 2.2rem;
     color: #77628C !important;
 }
 
 .link-sidebar-footer>ul>li>a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 0 5px 0 5px;
     color: #77628C !important;
 }
 
