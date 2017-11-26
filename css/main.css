@@ -72,12 +72,14 @@ html, body {
     border-radius: 45px;
     background: #77628C;
     color: #fff;
+    font-size: 16px;
     font-size: 1.6rem;
 }
 
 .cookieDeny {
     display: inline-block;
     color: #77628C;
+    font-size: 16px;
     font-size: 1.6rem;
 }
 
@@ -120,6 +122,7 @@ footer {
 
 
 footer>ul>li>a {
+    font-size: 18px;
     font-size: 1.8rem;
     color: #fff;
     text-decoration: none;
