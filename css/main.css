@@ -15,6 +15,11 @@ html, body {
     background-color: #77628C;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Tools */
 
 .inline-list {
@@ -39,27 +44,30 @@ html, body {
 /* Cookies */
 
 .cookie {
-    display: none;
-    top: 0;
     position: absolute;
+    top: 20px;
     left: 50%;
-    transform: translateX( -50%);
-    padding: 10px;
-    margin: 20px 0 0 0;
-    width: 300px;
-    height: auto;
-    border-radius: 45px;
+    transform: translateX(-50%);
+    display: block;
+    padding: 20px 20px 20px 20px;
     background: #fff;
+    border-radius: 45px;
     text-align: center;
 }
+
 .cookieText {
     display: inline-block;
-    margin: 0 20px 0 0;
 }
+
 .cookieText>p {
-    display: inline-block;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.cookieText>p>a {
+    font-size: 1.8rem;
     color: #77628C;
-    font-size: 1.6rem;
+    text-decoration: none;
 }
 
 .cookieAction {
@@ -67,20 +75,16 @@ html, body {
 }
 
 .cookieAccept {
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 45px;
-    background: #77628C;
+    padding: 10px 15px 10px 15px;
+    margin: 0 10px 0 10px;
+    font-size: 1.8rem;
     color: #fff;
-    font-size: 16px;
-    font-size: 1.6rem;
+    background: #77628C;
+    border-radius: 45px;
 }
 
 .cookieDeny {
-    display: inline-block;
-    color: #77628C;
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 /* Wrapper */
@@ -145,8 +149,8 @@ footer>ul>li>a {
 
 .link-sidebar-main>ul>li>a {
     text-decoration: none;
-    font-size: 2.2rem;
-    color: #77628C !important;
+    font-size: 1.8rem;
+    color: #222 !important;
 }
 
 .link-sidebar-footer>ul>li>a {
