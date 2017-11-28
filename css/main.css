@@ -1,5 +1,7 @@
 /* </> Lukas Eder */
 
+/* I messed this up a little bit, but im trying my best to do make it better! :) */
+
 /* General */
 
 * {
@@ -44,24 +46,27 @@ a {
 /* Cookies */
 
 .cookie {
+    z-index: 1000;
     position: absolute;
-    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: block;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
+    margin: 20px 0 0 0;
     background: #fff;
     border-radius: 45px;
     text-align: center;
 }
 
 .cookieText {
+    position: relative;
     display: inline-block;
+    margin: 0 0 0 15px;
 }
 
 .cookieText>p {
     font-size: 1.8rem;
-    color: #222;
+    color: #2d2d2d;
 }
 
 .cookieText>p>a {
@@ -71,6 +76,7 @@ a {
 }
 
 .cookieAction {
+    position: relative;
     display: inline-block;
 }
 
@@ -85,6 +91,20 @@ a {
 
 .cookieDeny {
     font-size: 1.8rem;
+    color: #2d2d2d;
+}
+
+@media only screen and (max-width: 768px) {
+    .cookie {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 25px 0;
+        border-radius: 0;
+    }
+
+    .cookieAction{
+        margin: 15px 0 0 0;
+    }
 }
 
 /* Wrapper */
@@ -150,7 +170,7 @@ footer>ul>li>a {
 .link-sidebar-main>ul>li>a {
     text-decoration: none;
     font-size: 1.8rem;
-    color: #222 !important;
+    color: #2d2d2d !important;
 }
 
 .link-sidebar-footer>ul>li>a {
