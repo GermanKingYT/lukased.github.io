@@ -48,20 +48,16 @@ a {
 .cookie {
     z-index: 1000;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     display: block;
-    padding: 20px;
-    margin: 20px 0 0 0;
+    padding: 15px 0 15px 0;
     background: #fff;
-    border-radius: 45px;
     text-align: center;
 }
 
 .cookieText {
     position: relative;
     display: inline-block;
-    margin: 0 0 0 15px;
 }
 
 .cookieText>p {
@@ -78,6 +74,17 @@ a {
 .cookieAction {
     position: relative;
     display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .cookieText {
+        display: block;
+    }
+    .cookieAction {
+        display: block;
+        margin: 15px 0 10px 0;
+    }
 }
 
 .cookieAccept {
@@ -92,19 +99,6 @@ a {
 .cookieDeny {
     font-size: 1.8rem;
     color: #2d2d2d;
-}
-
-@media only screen and (max-width: 768px) {
-    .cookie {
-        width: 100%;
-        margin: 0;
-        padding: 10px 0 25px 0;
-        border-radius: 0;
-    }
-
-    .cookieAction{
-        margin: 15px 0 0 0;
-    }
 }
 
 /* Wrapper */
