@@ -24,13 +24,17 @@ $(document).ready(function () {
         $('.cookie').remove();
     });
 
-    // Sidebar
+    // Menu
+    function openMenu() {
+        $('.menu').animate({left: "0"});
+    }
 
-    $('.link-sidebar-open').click(function () {
-        $('.link-sidebar').animate({left: "0"});
+
+    $('.menu-open').click(function () {
+        openMenu();
     });
 
-    $('.link-sidebar-close').click(function () {
-        $('.link-sidebar').animate({left: "-100%"});
+    $('.menu-close').click(function () {
+        $('.menu').animate({left: "-100%"},{duration: 250});
     });
 });

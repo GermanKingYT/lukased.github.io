@@ -12,12 +12,18 @@ html, body {
     height: 100%;
     font-size: 62.5%;
     font-family: "Roboto", sans-serif;
-    background-color: #77628C;
+    background-color: #fff;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+/* @material-icons */
+
+.material-icons {
+    vertical-align: top !important;
 }
 
 /* List */
@@ -61,13 +67,13 @@ a {
 .cookieText>p {
     font-size: 18px;
     font-size: 1.8rem;
-    color: #2d2d2d;
+    color: #212121;
 }
 
 .cookieText>p>a {
     font-size: 18px;
     font-size: 1.8rem;
-    color: #77628C;
+    color: #05004c;
     text-decoration: none;
 }
 
@@ -77,22 +83,14 @@ a {
     margin: 0 10px 0 0;
 }
 
-@media only screen and (max-width: 492px) {
-    .cookieText {
-        display: block;
-    }
-    .cookieAction {
-        display: block;
-        margin: 15px 0 10px 0;
-    }
-}
+
 
 .cookieAccept {
     padding: 10px 15px 10px 15px;
     margin: 0 10px 0 10px;
     font-size: 1.8rem;
     color: #fff;
-    background: #77628C;
+    background: #05004c;
     border-radius: 45px;
 }
 
@@ -105,7 +103,7 @@ a {
 
 .wrapper {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -124,7 +122,7 @@ main {
     height: 300px;
     background: url("../img/avatar.jpg") no-repeat center top;
     background-size: 300px auto;
-    border: 5px solid #fff;
+    border: 4px solid #05004c;
     border-radius: 100%;
 }
 
@@ -140,42 +138,69 @@ footer {
 
 
 footer>ul>li>a {
-    font-size: 24px;
-    font-size: 2.4rem;
-    color: #fff;
+    vertical-align: middle !important;
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #212121;
     text-decoration: none;
     padding: 0 5px 0 5px;
     cursor: pointer;
 }
 
-/* Sidebar */
+/* Menu */
 
 
-.link-sidebar {
+.menu {
     z-index: 10000;
     top: 0;
     left: -100%;
     position: absolute;
-    width: 100%;
+    width: 25%;
     height: 100%;
-    background: white;
+    background: #05004c;
 }
 
-.link-sidebar-main>ul>li>a {
+.menu-footer>ul>li>.legal-notice {
+    color: #ffb3b3 !important;
+}
+
+.menu-main>ul>li>a {
     text-decoration: none;
     font-size: 24px;
     font-size: 2.4rem;
-    color: #77628C !important;
+    color: #fff !important;
+    line-height: 35px;
 }
 
-.link-sidebar-footer>ul>li>a {
+.menu-footer>ul>li>a {
     text-decoration: none;
     font-size: 18px;
     font-size: 1.8rem;
     padding: 0 5px 0 5px;
-    color: #77628C !important;
+    color: #fff !important;
 }
 
-.material-icons {
-    vertical-align: middle !important;
+.menu-mail {
+    display: none;
+}
+
+
+/* Menu */
+
+@media only screen and (max-width: 768px) {
+    .cookieText {
+        display: block;
+    }
+    .cookieAction {
+        display: block;
+        margin: 15px 0 10px 0;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu-mail {
+        display: inline-block;
+    }
 }
