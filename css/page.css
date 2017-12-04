@@ -14,6 +14,14 @@ html, body {
     font-family: "Roboto", sans-serif;
 }
 
+::selection {
+  background: #b8b3ff;
+}
+
+::-moz-selection {
+  background: #b8b3ff;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;

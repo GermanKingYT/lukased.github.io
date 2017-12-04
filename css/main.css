@@ -1,5 +1,14 @@
 /* </> Lukas Eder */
 
+/*
+   -- @colors --
+   blue=05004c
+   light-blue=b8b3ff
+   red=7f0000
+
+
+*/
+
 /* -- @general -- */
 
 * {
@@ -13,6 +22,14 @@ html, body {
     font-size: 62.5%;
     font-family: "Roboto", sans-serif;
     background-color: #fff;
+}
+
+::selection {
+    background: #b8b3ff;
+}
+
+::-moz-selection {
+    background: #b8b3ff;
 }
 
 a {
@@ -115,7 +132,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 header>nav>ul>li>a {
@@ -190,7 +207,7 @@ footer>.footer-nav>ul>li>a {
     cursor: pointer;
 }
 
-/* Menu */
+/* -- @menu -- */
 
 
 .menu {
@@ -240,11 +257,6 @@ footer>.footer-nav>ul>li>a {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10px;
-}
-
-
-.menu-mail {
-    display: none;
 }
 
 /* -- @media -- */
