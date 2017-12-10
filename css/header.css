@@ -178,7 +178,8 @@ header {
     color: #212121;
 }
 
-.qmark {
+.question-mark {
+    font-style: normal;
     color: #05004c;
     font-size: 24px;
     padding: 0 10px 0 5px;
