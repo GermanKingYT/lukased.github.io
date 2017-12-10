@@ -24,7 +24,7 @@ header {
 .header-logo>a>.logo {
     width: 42px;
     height: 42px;
-    background: url('../img/logo-w.png') no-repeat top center;
+    background: url('../img/logo-white.png') no-repeat top center;
     background-size: 42px 42px;
 }
 
@@ -73,9 +73,55 @@ header {
     margin: 10px 0 10px 0;
     left: 50%;
     transform: translateX(-50%);
+    animation: swing 1.5s infinite;
 }
 .header-area-scroll>a {
     color: #fff;
+}
+
+@keyframes swing {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@-webkit-keyframes swing {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@-moz-keyframes swing {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@-ms-keyframes swing {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0;
+    }
 }
 
 /* -- @menu -- */
@@ -130,6 +176,16 @@ header {
     padding: 10px 0 10px 0;
     font-size: 18px;
     color: #212121;
+}
+
+.qmark {
+    color: #05004c;
+    font-size: 24px;
+    padding: 0 10px 0 5px;
+}
+
+.menu-nav-top {
+    color: #05004c !important;
 }
 
 @media only screen and (max-width: 768px) {

@@ -38,4 +38,13 @@ $(document).ready(function () {
     $('.menu-hide').click(function () {
         $('.menu').animate({right: '-100%'},{duration: 250});
     });
+
+
+    /* -- @scroll -- */
+    $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 500);
+        return false;
+    });
 });
