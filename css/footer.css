@@ -19,10 +19,11 @@ footer {
     margin: 0 0 0 20px;
 }
 
-.footer-info {
-    display: inline-block;
-    color: #fff;
-    font-size: 18px;
+.footer-logo>a>.logo {
+    width: 42px;
+    height: 42px;
+    background: url('../img/logo-w.png') no-repeat top center;
+    background-size: 42px 42px;
 }
 
 .footer-area-right {
