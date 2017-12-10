@@ -1,6 +1,9 @@
 /* </> Lukas Eder */
 
 $(document).ready(function () {
+
+    /* -- @cookie -- */
+/*
     if (document.cookie == "") {
         $('.cookie').css('display','block');
     } else {
@@ -24,17 +27,15 @@ $(document).ready(function () {
         $('.cookie').remove();
     });
 
-    // Menu
-    function openMenu() {
-        $('.menu').animate({left: "0"});
-    }
+*/
 
+    /* -- @menu --*/
 
-    $('.menu-open').click(function () {
-        openMenu();
+    $('.menu-show').click(function () {
+        $('.menu').animate({right: 0},{duration: 500});
     });
 
-    $('.menu-close').click(function () {
-        $('.menu').animate({left: "-100%"},{duration: 250});
+    $('.menu-hide').click(function () {
+        $('.menu').animate({right: '-100%'},{duration: 250});
     });
 });

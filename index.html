@@ -26,79 +26,116 @@
         <meta name="theme-color" content="#05004c">
 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/cookie.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/main.js"></script>
     </head>
-    <body>
+
+    <body><!--
         <div class="cookie">
-            <div class="cookieText">
-                <p>I use <a href="legal_notice.html#privacy-policy">cookies</a> for a better user experience.</p>
-            </div>
-            <div class="cookieAction">
+            <div class="cookie-wrapper">
+                <p>I use <a href="legal-notice.html#privacy-policy">cookies</a> for a better user experience.</p>
+
                 <ul class="inline-list">
-                    <li><a class="cookieAccept">Accept</a></li>
-                    <li><a class="cookieDeny">Deny</a></li>
+                    <li><a class="cookieAccept btn btn-blue">Accept</a></li>
+                    <li><a class="cookieDeny"><i class="material-icons">close</i></a></li>
                 </ul>
             </div>
-        </div>
+        </div>-->
 
         <div class="wrapper">
             <header>
-                <nav>
-                    <ul class="inline-list">
-                        <li><a class="menu-open"><i class=" material-icons">menu</i></a></li>
-                    </ul>
-                </nav>
+                <div class="header-wrapper">
+                    <div class="header-area-nav">
+                        <div class="header-area-nav-left">
+                            <div class="header-logo">
+                                <a href="#"><div class="logo"></div></a>
+                            </div>
+                        </div>
+
+                        <div class="header-area-nav-right">
+                            <nav class="header-nav">
+                                <ul class="inline-list">
+                                    <li><a class="menu-show"><i class="material-icons">menu</i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="header-area-avatar">
+                        <div class="header-avatar"></div>
+                    </div>
+
+                    <div class="header-area-scroll">
+                        <a class="scroll" href="#first"><i class="material-icons">&#xE5DB;</i></a>
+                    </div>
+                </div>
             </header>
 
             <main>
-                <div class="avatar"></div>
+                <div class="main-wrapper">
+                    <section id="first">
+                        <article>
+                            <h1>No content on this site yet. :(</h1>
+                            <p>
+                                This site is not finished yet,<br>
+                                but I do my best to be back soon.<br>
+                            </p>
+                        </article>
+                    </section>
+                </div>
             </main>
 
             <footer>
-                <nav class="footer-nav">
-                    <ul class="inline-list">
-                        <li><a href="mailto:lukasedeeeer@gmail.com"><i class="material-icons">email</i></a></li>
-                        <li><a href="legal_notice.html#legal-notice">Legal Notice</a></li>
-                        <li><a href="legal_notice.html#privacy-policy">Privacy Policy</a></li>
-                    </ul>
-                </nav>
+                <div class="footer-wrapper">
+                    <div class="footer-area-left">
+                        <p class="footer-info">Lukas Eder</p>
+                    </div>
+
+                    <div class="footer-area-right">
+                        <nav class="footer-nav">
+                            <ul class="inline-list">
+                                <li><a href="legal-notice.html#legal-notice">Legal Notice</a></li>
+                                <li><a href="legal-notice.html#privacy-policy">Privacy Policy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </footer>
         </div>
 
         <div class="menu">
             <header class="menu-header">
-                <nav>
-                    <ul class="inline-list">
-                        <li><a class="menu-close"><i class=" material-icons">close</i></a></li>
-                    </ul>
-                </nav>
+                <div class="menu-header-wrapper">
+                    <div class="menu-header-area-nav-right">
+                        <nav class="menu-header-nav">
+                            <ul class="inline-list">
+                                <li><a class="menu-hide"><i class="material-icons">close</i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </header>
-
-            <main class="menu-main">
-                <nav class="menu-links">
-                    <ul class="list">
-                        <li><a href="https://github.com/lukased"><i class="fa fa-github"></i> Github</li>
-                        <li><a href="https://instagram.com/lukasedeeeer"><i class="fa fa-instagram"></i> Instagram</a></li>
-                        <li><a href="https://twitter.com/lukasedeeeer"><i class="fa fa-twitter"></i> Twitter</a></li>
-                        <li><a href="https://facebook.com/lukasedeeeer"><i class="fa fa-facebook-official"></i> Facebook</a></li>
-                    </ul>
-                </nav>
-            </main>
-
-            <footer class="menu-footer">
-                <nav class="menu-footer-nav">
-                    <ul class="inline-list">
-                        <li><a href="mailto:lukasedeeeer@gmail.com"><i class="material-icons">email</i></a></li>
-                        <li><a href="legal_notice.html#legal-notice">Legal Notice</a></li>
-                        <li><a href="legal_notice.html#privacy-policy">Privacy Policy</a></li>
-                    </ul>
-                </nav>
-            </footer>
+            <div class="menu-main">
+                <div class="menu-main-wrapper">
+                    <nav class="menu-nav">
+                        <ul class="list">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </body>
 </html>

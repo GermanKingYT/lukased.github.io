@@ -1,12 +1,12 @@
 /* </> Lukas Eder */
 
+
 /*
    -- @colors --
    blue=05004c
    light-blue=b8b3ff
    red=7f0000
-
-
+   black=212121
 */
 
 /* -- @general -- */
@@ -19,17 +19,8 @@
 html, body {
     width: 100%;
     height: 100%;
-    font-size: 62.5%;
     font-family: "Roboto", sans-serif;
-    background-color: #fff;
-}
-
-::selection {
-    background: #b8b3ff;
-}
-
-::-moz-selection {
-    background: #b8b3ff;
+    background-color: #ccc;
 }
 
 a {
@@ -37,18 +28,10 @@ a {
     cursor: pointer;
 }
 
-/* -- @material-icons -- */
-
-.material-icons {
-    vertical-align: top !important;
-}
-
-/* -- @list -- */
+/* -- @things -- */
 
 .inline-list {
     display: inline-block;
-    margin: 0;
-    padding: 0;
     list-style-type: none;
     text-align: center;
 }
@@ -64,218 +47,62 @@ a {
     text-align: left;
 }
 
-/* -- @cookie -- */
 
-.cookie {
-    z-index: 1000;
-    position: absolute;
-    width: 100%;
-    display: block;
-    padding: 15px 0 15px 0;
-    background: rgba(255, 255, 255, 0.6);
-    text-align: center;
-}
-
-.cookieText {
-    position: relative;
+.btn {
     display: inline-block;
-}
-
-.cookieText>p {
     font-size: 18px;
-    font-size: 1.8rem;
-    color: #212121;
-}
-
-.cookieText>p>a {
-    font-size: 18px;
-    font-size: 1.8rem;
-    color: #05004c;
-    text-decoration: none;
-}
-
-.cookieAction {
-    position: relative;
-    display: inline-block;
-    margin: 0 10px 0 0;
-}
-
-
-
-.cookieAccept {
     padding: 10px 15px 10px 15px;
-    margin: 0 10px 0 10px;
-    font-size: 1.8rem;
-    color: #fff;
-    background: #05004c;
-    border-radius: 45px;
-}
-
-.cookieDeny {
-    font-size: 1.8rem;
-    color: #2d2d2d;
-}
-
-/* -- @wrapper -- */
-
-.wrapper {
-    width: 100%;
-    height: 100%;
-
-}
-
-
-/* -- @header -- */
-
-header {
-    top: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px 0 0 0;
-}
-
-header>nav>ul>li>a {
-    text-decoration: none;
-    font-size: 18px;
-    font-size: 1.8rem;
-    padding: 0 5px 0 5px;
+    background: #ddd;
     color: #212121;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background: #05004c;
+    color: #fff;
+}
+
+.btn-red {
+    background: #7f0000;
+    color: #fff;
+}
+
+.material-icons {
+    vertical-align: middle;
 }
 
 /* -- @main -- */
 
 main {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+
+section {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+article {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
 }
 
-.avatar {
-    width: 300px;
-    height: 300px;
-    background: url("../img/avatar.jpg") no-repeat center top;
-    background-size: 300px auto;
-    border: 4px solid #05004c;
-    border-radius: 100%;
+h1 {
+    font-size: 28px;
 }
 
-.logo {
-    width: 300px;
-    height: 300px;
-    background: url("../img/logo.png") no-repeat;
-    background-size: 300px auto;
-    border-radius: 100%;
-}
-
-/* -- @footer -- */
-
-.footer-nav {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-}
-
-.footer-links {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 0 10px 20px;
-}
-
-.footer-links>ul>li>a {
-    vertical-align: middle !important;
+p {
     font-size: 18px;
-    font-size: 1.8rem;
-    color: #212121;
-    text-decoration: none;
-    padding: 0 5px 0 5px;
-    cursor: pointer;
 }
 
-
-footer>.footer-nav>ul>li>a {
-    vertical-align: middle !important;
-    font-size: 18px;
-    font-size: 1.8rem;
-    color: #212121;
-    text-decoration: none;
-    padding: 0 5px 0 5px;
-    cursor: pointer;
-}
-
-/* -- @menu -- */
-
-
-.menu {
-    z-index: 10000;
-    top: 0;
-    left: -100%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #05004c;
-}
-
-.menu-header {
-    top: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.menu-header>nav>ul>li>a {
-    text-decoration: none;
-    font-size: 18px;
-    font-size: 1.8rem;
-    padding: 0 5px 0 5px;
-    color: #fff !important;
-}
-
-
-.menu-main>.menu-links>ul>li>a {
-    text-decoration: none;
-    font-size: 24px;
-    font-size: 2.4rem;
-    color: #fff !important;
-    line-height: 35px;
-}
-
-.menu-footer>.menu-footer-nav>ul>li>a {
-    text-decoration: none;
-    font-size: 18px;
-    font-size: 1.8rem;
-    padding: 0 5px 0 5px;
-    color: #fff !important;
-}
-.menu-footer-nav {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-}
-
-/* -- @media -- */
-
-@media only screen and (max-width: 768px) {
-    .cookieText {
-        display: block;
-    }
-    .cookieAction {
-        display: block;
-        margin: 15px 0 10px 0;
-    }
-
-    .footer-nav>ul>li>a {
-        display: block;
-        line-height: 25px;
-    }
-    .menu-footer-nav>ul>li>a {
-        display: block;
-        line-height: 25px;
-    }
-}
