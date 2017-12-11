@@ -93,8 +93,9 @@ section {
 article {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    margin: 0 0 0 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
 
 h1 {
@@ -102,6 +103,44 @@ h1 {
 }
 
 p {
+    display: inline-block;
     font-size: 32px;
+}
+
+article>.inline-list {
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+article>ul>li>a {
+    font-size: 42px;
+    margin: 0 0 0 10px;
+    color: #212121;
+}
+
+.bubble {
+    display: inline-block;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #212121;
+    border-radius: 45px;
+    background: url('../img/avatar.jpg') no-repeat top center;
+    background-size: 38px 38px;
+}
+
+.bubble.me {
+    background: url('../img/avatar.jpg') no-repeat top center fixed;
+    background-size: 38px 38px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    article {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
 }
 
