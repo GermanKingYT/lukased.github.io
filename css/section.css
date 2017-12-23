@@ -1,0 +1,11 @@
+section#who {
+    background: url("../img/who.png") no-repeat right center;
+}
+
+section#what {
+    background: url("../img/what.png") no-repeat right center;
+}
+
+section#where {
+    background: url("../img/where.png") no-repeat center center;
+}

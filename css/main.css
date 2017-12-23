@@ -1,5 +1,6 @@
 /* </> Lukas Eder */
 
+@import "section.css";
 
 /*
    -- @colors --
@@ -21,6 +22,14 @@ html, body {
     height: 100%;
     font-family: "Roboto", sans-serif;
     background-color: #ccc;
+}
+
+::selection {
+    background: #b8b3ff;
+}
+
+::-moz-selection {
+    background: #b8b3ff;
 }
 
 a {
@@ -90,21 +99,32 @@ section {
     height: 100vh;
 }
 
+article:first-child {
+    position: relative;
+    max-width: 1000px;
+    margin:0 auto 0 auto;
+    padding: 60px 0 0 0;
+}
 article {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+    max-width: 1000px;
+    top:50%;
+    transform: translateY(-50%);
 }
 
-h1 {
-    font-size: 42px;
-}
-
-p {
+article>h1 {
     display: inline-block;
-    font-size: 32px;
+    vertical-align: middle;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+article>p {
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 26px;
+    color: #222;
+    hyphens: manual;
 }
 
 article>.inline-list {
@@ -119,20 +139,17 @@ article>ul>li>a {
 }
 
 .bubble {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: 38px;
-    height: 38px;
-    border: 2px solid #212121;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    margin: 0 10px 0 0;
+    border: 2px solid #05004c;
     border-radius: 45px;
-    background: url('../img/avatar.jpg') no-repeat top center;
-    background-size: 38px 38px;
 }
 
-.bubble.me {
-    background: url('../img/avatar.jpg') no-repeat top center fixed;
-    background-size: 38px 38px;
-}
 
 
 @media only screen and (max-width: 768px) {
@@ -140,7 +157,6 @@ article>ul>li>a {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        text-align: center;
     }
 }
 
