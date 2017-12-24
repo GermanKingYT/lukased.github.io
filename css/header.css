@@ -48,6 +48,13 @@ header {
 
 .header-nav>ul>li>a {
     color: #fff;
+    margin: 0 0 0 10px;
+    font-size: 18px;
+}
+
+.header-nav>ul>li>a:last-child {
+    color: #fff;
+    margin: 0 0 0 20px;
 }
 
 .header-area-avatar {

@@ -9,7 +9,6 @@ section#what {
 
 section#where {
     background: url("../img/background/where.png") no-repeat right center;
-    animation: bg-move 6s infinite;
 }
 
 @keyframes bg-move {
