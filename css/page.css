@@ -42,7 +42,7 @@ header {
   margin: 0 auto 0 auto;
   width: 200px;
   height: 200px;
-  background: url('../img/logo.png') no-repeat;
+  background: url('../img/logo/logo.png') no-repeat;
   background-size: 200px 200px;
 }
 

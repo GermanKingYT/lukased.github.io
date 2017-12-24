@@ -22,7 +22,7 @@ footer {
 .footer-logo>a>.logo {
     width: 42px;
     height: 42px;
-    background: url('../img/logo-white.png') no-repeat top center;
+    background: url('../img/logo/logo-white.png') no-repeat top center;
     background-size: 42px 42px;
 }
 

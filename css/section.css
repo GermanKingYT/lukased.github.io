@@ -1,11 +1,34 @@
 section#who {
-    background: url("../img/who.png") no-repeat right center;
+    background: url("../img/background/who.png") no-repeat right center;
+    animation: bg-move 4s infinite;
 }
 
 section#what {
-    background: url("../img/what.png") no-repeat right center;
+    background: url("../img/background/what.png") no-repeat right center;
 }
 
 section#where {
-    background: url("../img/where.png") no-repeat right center;
+    background: url("../img/background/where.png") no-repeat right center;
+    animation: bg-move 6s infinite;
+}
+
+@keyframes bg-move {
+    0%  { background-position: 100%; }
+    50% { background-position: 98%; }
+    100% { background-position: 100%; }
+}
+@-webkit-keyframes bg-move {
+    0%  { background-position: 100%; }
+    50% { background-position: 98%; }
+    100% { background-position: 100%; }
+}
+@-moz-keyframes bg-move {
+    0%  { background-position: 100%; }
+    50% { background-position: 98%; }
+    100% { background-position: 100%; }
+}
+@-ms-keyframes bg-move {
+    0%  { background-position: 100%; }
+    50% { background-position: 98%; }
+    100% { background-position: 100%; }
 }
