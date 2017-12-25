@@ -100,16 +100,12 @@ section {
 }
 
 article {
-    position: relative;
-    max-width: 1000px;
-    top:50%;
-    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
 }
 
-article:first-child {
-    margin:0 auto 0 auto;
-    padding: 60px 0 0 0;
-}
 
 article>h1 {
     display: inline-block;
@@ -142,14 +138,14 @@ article>p {
     article>h1 {
         display: inline-block;
         vertical-align: middle;
-        font-size: 24px;
+        font-size: 26px;
         font-weight: normal;
     }
 
     article>p {
         display: block;
         margin: 10px 0 0 0;
-        font-size: 22px;
+        font-size: 24px;
         color: #222;
     }
 }
