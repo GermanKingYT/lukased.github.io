@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     /* -- @cookie -- */
-/*
+
     if (document.cookie == "") {
         $('.cookie').css('display','block');
     } else {
@@ -27,7 +27,13 @@ $(document).ready(function () {
         $('.cookie').remove();
     });
 
-*/
+    setTimeout(function() {
+        $('.cookie').animate({opacity: "0.6"},{duration: 200});
+        setTimeout(function() {
+            $('.cookie').remove();
+        }, 60000);
+    }, 30000);
+
 
     /* -- @menu --*/
 

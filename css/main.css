@@ -127,17 +127,6 @@ article>p {
     hyphens: manual;
 }
 
-article>.inline-list {
-    display: block;
-    margin: 20px 0 0 0;
-}
-
-article>ul>li>a {
-    font-size: 42px;
-    margin: 0 0 0 10px;
-    color: #212121;
-}
-
 .bubble {
     position: relative;
     display: inline-block;
@@ -150,13 +139,19 @@ article>ul>li>a {
     border-radius: 45px;
 }
 
-
-
 @media only screen and (max-width: 768px) {
-    article {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+    article>h1 {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    article>p {
+        display: block;
+        margin: 10px 0 0 0;
+        font-size: 22px;
+        color: #222;
     }
 }
 
