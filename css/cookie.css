@@ -3,17 +3,16 @@
 /* -- @cookie -- */
 
 .cookie {
-    position: fixed;
+    position: relative;
     display: block;
     width: 100%;
     height: auto;
     background: rgba(255, 255, 255, 0.6);
-    bottom: 0;
     z-index: 1000;
-    animation: blink 2s infinite;
+    animation: bg-blink 2s infinite;
 }
 
-@keyframes blink {
+@keyframes bg-blink {
     0% { background: rgba(255, 255, 255, 0.6); }
     50% { background: rgba(255, 255, 255, 0.8); }
     100% { background: rgba(255, 255, 255, 0.6); }
