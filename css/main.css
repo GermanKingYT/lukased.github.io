@@ -99,17 +99,16 @@ section {
     height: 100vh;
 }
 
-article:first-child {
-    position: relative;
-    max-width: 1000px;
-    margin:0 auto 0 auto;
-    padding: 60px 0 0 0;
-}
 article {
     position: relative;
     max-width: 1000px;
     top:50%;
     transform: translateY(-50%);
+}
+
+article:first-child {
+    margin:0 auto 0 auto;
+    padding: 60px 0 0 0;
 }
 
 article>h1 {
