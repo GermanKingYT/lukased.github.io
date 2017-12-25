@@ -27,7 +27,6 @@ $(document).ready(function () {
         $('.cookie').remove();
     });
 
-
     /* -- @menu --*/
 
     $('.menu-show').click(function () {
@@ -38,8 +37,8 @@ $(document).ready(function () {
         $('.menu').animate({right: '-100%'},{duration: 250});
     });
 
-
     /* -- @scroll -- */
+
     $('a').click(function(){
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top

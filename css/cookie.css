@@ -40,9 +40,12 @@
 
 @media only screen and (max-width: 768px) {
     .cookie-wrapper {
+        width: 100%;
         margin: 0;
+        text-align: center;
     }
     .cookie-wrapper>p {
+        margin: 0 0 10px 0;
         display: block;
     }
 }
