@@ -49,4 +49,44 @@ $(document).ready(function () {
         }
         return false;
     });
+    
+    
+    /* -- @highlight -- */
+
+    var menuHighlightElements = $('.menu-nav ul li a');
+
+    var menuHighlightCurrent = 0;
+    var menuHighlightTop;
+
+    var menuHighlightObject = $(menuHighlightElements[0]);
+    menuHighlightObject.addClass('menu-highlight');
+
+    $(window).scroll(function(){
+
+        for(var i = 0; i < menuHighlightElements.length;i++) {
+
+            var menuHighlightLink = $(menuHighlightElements[i]).attr('href');
+
+            if($(menuHighlightLink).length){
+                menuHighlightTop = $(menuHighlightLink).offset().top;
+            }
+
+            var UD_SCROLL_TOP = $(window).scrollTop();
+            var menuHighlightDif = Math.abs(UD_SCROLL_TOP - menuHighlightTop);
+
+            if(i === 0) {
+                menuHighlightCurrent = menuHighlightDif;
+                menuHighlightObject = $(menuHighlightElements[i]);
+                $('nav ul li a').removeClass('menu-highlight');
+                menuHighlightObject.addClass('menu-highlight');
+            } else {
+                if(menuHighlightDif < menuHighlightCurrent || menuHighlightDif === menuHighlightCurrent) {
+                    menuHighlightCurrent = menuHighlightDif;
+                    menuHighlightObject = $(menuHighlightElements[i]);
+                    $('nav ul li a').removeClass('menu-highlight');
+                    menuHighlightObject.addClass('menu-highlight');
+                }
+            }
+        }
+    });
 });

@@ -2,14 +2,12 @@
 
 @import "section.css";
 
-/* ----#----#----#----#----#---- */
 /*
 blue=05004c
 light-blue=b8b3ff
 red=7f0000
 black=212121
 */
-/* ----#----#----#----#----#---- */
 
 /* ----#----#----#----#----#---- */
 /* -- @cookie -- */
@@ -252,7 +250,7 @@ header {
     color: #212121;
 }
 
-.menu-nav-top {
+.menu-highlight {
     color: #05004c !important;
 }
 
