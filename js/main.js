@@ -49,4 +49,10 @@ $(document).ready(function () {
         }
         return false;
     });
+
+
+    /* -- @whereami -- */
+    if ( $('#who').is(':visible') ) {
+        alert('Hi');
+    }
 });

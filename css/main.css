@@ -2,15 +2,270 @@
 
 @import "section.css";
 
+/* ----#----#----#----#----#---- */
 /*
-   -- @colors --
-   blue=05004c
-   light-blue=b8b3ff
-   red=7f0000
-   black=212121
+blue=05004c
+light-blue=b8b3ff
+red=7f0000
+black=212121
 */
+/* ----#----#----#----#----#---- */
 
+/* ----#----#----#----#----#---- */
+/* -- @cookie -- */
+/* ----#----#----#----#----#---- */
+
+.cookie {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1000;
+    animation: bg-blink 2s infinite;
+}
+
+@keyframes bg-blink {
+    0% { background: rgba(255, 255, 255, 0.6); }
+    50% { background: rgba(255, 255, 255, 0.8); }
+    100% { background: rgba(255, 255, 255, 0.6); }
+}
+
+.cookie-wrapper {
+    position: relative;
+    width: 485px;
+    margin: 0 auto 0 auto;
+    padding: 10px 0 10px 0 ;
+}
+
+.cookie-wrapper>p {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 10px 0 0;
+}
+
+.cookie-wrapper>p>a {
+    display: inline-block;
+    text-decoration: none;
+    color: #05004c;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .cookie-wrapper {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .cookie-wrapper>p {
+        margin: 0 0 10px 0;
+        display: block;
+    }
+}
+
+/* ----#----#----#----#----#---- */
+/* -- @header -- */
+/* ----#----#----#----#----#---- */
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #05004c;
+}
+
+.header-area-nav-left {
+    position: absolute;
+    display: block;
+    left: 0;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0 0 20px;
+}
+
+.header-logo>a>.logo {
+    width: 42px;
+    height: 42px;
+    background: url('../img/logo/logo-white.png') no-repeat top center;
+    background-size: 42px 42px;
+}
+
+.header-area-nav {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.header-area-nav-right {
+    position: absolute;
+    display: block;
+    right: 0;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px 0 0;
+}
+
+.header-nav>ul>li>a {
+    color: #fff;
+    margin: 0 0 0 10px;
+    font-size: 18px;
+}
+
+.header-nav>ul>li>a:last-child {
+    color: #fff;
+    margin: 0 0 0 20px;
+}
+
+.header-area-avatar {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header-area-avatar {
+    width: 300px;
+    height: 300px;
+    background: url("../img/avatar/avatar.jpg") no-repeat center top;
+    background-size: 300px auto;
+    border: 4px solid #fff;
+    border-radius: 100%;
+}
+
+.header-area-scroll {
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 10px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: jump 1.5s infinite;
+}
+.header-area-scroll>a {
+    color: #fff;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@-webkit-keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@-moz-keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@-ms-keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+/* ----#----#----#----#----#---- */
+/* -- @menu -- */
+/* ----#----#----#----#----#---- */
+
+.menu {
+    z-index: 10000;
+    display: block;
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    background: #fff;
+    border-left: 1px solid #eee;
+}
+
+.menu-header {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+}
+
+.menu-header-area-nav {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.menu-header-area-nav-right {
+    position: absolute;
+    display: block;
+    right: 0;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px 0 0;
+}
+
+.menu-nav{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.menu-nav>ul>li>a {
+    display: block;
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+    color: #212121;
+}
+
+.menu-nav-top {
+    color: #05004c !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        border: none;
+    }
+}
+
+/* ----#----#----#----#----#---- */
 /* -- @general -- */
+/* ----#----#----#----#----#---- */
 
 * {
     margin: 0;
@@ -37,7 +292,9 @@ a {
     cursor: pointer;
 }
 
+/* ----#----#----#----#----#---- */
 /* -- @things -- */
+/* ----#----#----#----#----#---- */
 
 .inline-list {
     display: inline-block;
@@ -82,7 +339,9 @@ a {
     vertical-align: middle;
 }
 
+/* ----#----#----#----#----#---- */
 /* -- @main -- */
+/* ----#----#----#----#----#---- */
 
 main {
     position: relative;
@@ -90,7 +349,6 @@ main {
     width: 100%;
     background: #fff;
 }
-
 
 section {
     position: relative;
@@ -105,7 +363,6 @@ article {
     left: 20%;
     transform: translate(-20%, -50%);
 }
-
 
 article>h1 {
     display: inline-block;
@@ -150,3 +407,46 @@ article>p {
     }
 }
 
+/* ----#----#----#----#----#---- */
+/* -- @footer -- */
+/* ----#----#----#----#----#---- */
+
+footer {
+    position: relative;
+    width: 100%;
+    height:60px;
+    background: #05004c;
+}
+
+.footer-area-left {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0 0 20px;
+}
+
+.footer-logo>a>.logo {
+    width: 42px;
+    height: 42px;
+    background: url('../img/logo/logo-white.png') no-repeat top center;
+    background-size: 42px 42px;
+}
+
+.footer-area-right {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px 0 0;
+}
+
+.footer-nav>ul>li>a {
+    font-size: 18px;
+    color: #fff;
+    margin: 0 10px 0 0;
+}
