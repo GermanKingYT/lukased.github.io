@@ -253,6 +253,11 @@ header {
 .menu-highlight {
     color: #05004c !important;
 }
+.menu-highlight::before {
+    font-family: "Material Icons";
+    vertical-align: middle;
+    content: "\E5C8";
+}
 
 @media only screen and (max-width: 768px) {
     .menu {
