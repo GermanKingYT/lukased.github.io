@@ -15,11 +15,11 @@ html, body {
 }
 
 ::selection {
-  background: #b8b3ff;
+  background: #D32F2F;
 }
 
 ::-moz-selection {
-  background: #b8b3ff;
+  background: #D32F2F;
 }
 
 a {
@@ -76,7 +76,7 @@ a {
   font-size: 18px;
   font-size: 1.8rem;
   text-decoration: none;
-  color: #05004c;
+  color: #1A237E;
 }
 
 
