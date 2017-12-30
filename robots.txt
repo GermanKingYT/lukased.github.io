@@ -1,0 +1,8 @@
+# </> Lukas Eder
+
+Sitemap: http://lukased.de/sitemap.xml
+
+User-Agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /img

@@ -221,6 +221,7 @@ header {
     transform: translateX(-50%);
     animation: jump 1.5s infinite;
 }
+
 .header-area-scroll>a {
     color: #fff;
 }
