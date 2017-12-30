@@ -299,28 +299,21 @@ article {
 article>h1 {
     display: inline-block;
     vertical-align: middle;
+    padding: 0 5px 0 5px;
+    font-family: "Roboto Medium", sans-serif;
     font-size: 28px;
     font-weight: normal;
+    color: #fff;
+    background: #212121;
 }
+
 
 article>p {
     display: block;
     margin: 10px 0 0 0;
     font-size: 26px;
-    color: #222;
+    color: #212121;
     hyphens: manual;
-}
-
-.bubble {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 8px;
-    height: 8px;
-    overflow: hidden;
-    margin: 0 10px 0 0;
-    border: 2px solid #1A237E;
-    border-radius: 45px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -441,7 +434,8 @@ footer {
 }
 
 .menu-highlight {
-    background: #D32F2F !important;
+    color: #fff !important;
+    background: #212121 !important;
 }
 
 @media only screen and (max-width: 768px) {
