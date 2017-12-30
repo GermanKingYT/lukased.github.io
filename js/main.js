@@ -45,7 +45,6 @@ $(document).ready(function () {
         }, 500);
     });
 
-    
     /* -- @highlight -- */
 
     var menuHighlightElements = $('.menu-nav ul li a');
