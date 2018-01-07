@@ -6,3 +6,8 @@ User-Agent: *
 Disallow: /css
 Disallow: /js
 Disallow: /img
+
+User-agent: Twitterbot
+Disallow: *
+
+Allow: /img
