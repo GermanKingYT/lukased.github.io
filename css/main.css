@@ -19,7 +19,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: "Roboto", sans-serif;
-    background-color: #ccc;
+    background-color: #fff;
 }
 
 ::selection {
@@ -76,6 +76,8 @@ a {
     color: #fff;
 }
 
+/* @material-icons */
+
 .material-icons {
     vertical-align: middle;
 }
@@ -83,12 +85,12 @@ a {
 /* @cookie */
 
 .cookie {
+    z-index: 1000;
     position: relative;
     display: none;
     width: 100%;
     height: auto;
     background: rgba(255, 255, 255, 0.6);
-    z-index: 1000;
     animation: bg-blink 2s infinite;
 }
 
@@ -107,8 +109,8 @@ a {
 
 .cookie-wrapper>p {
     display: inline-block;
-    font-size: 18px;
     margin: 0 10px 0 0;
+    font-size: 18px;
 }
 
 .cookie-wrapper>p>a {
@@ -218,48 +220,24 @@ header {
 }
 
 @keyframes jump {
-    0% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 5px;
-    }
-    100% {
-        bottom: 0;
-    }
+    0% { bottom: 0; }
+    50% { bottom: 5px; }
+    100% { bottom: 0; }
 }
 @-webkit-keyframes jump {
-    0% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 5px;
-    }
-    100% {
-        bottom: 0;
-    }
+    0% { bottom: 0; }
+    50% { bottom: 5px; }
+    100% { bottom: 0; }
 }
 @-moz-keyframes jump {
-    0% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 5px;
-    }
-    100% {
-        bottom: 0;
-    }
+    0% { bottom: 0; }
+    50% { bottom: 5px; }
+    100% { bottom: 0; }
 }
 @-ms-keyframes jump {
-    0% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 5px;
-    }
-    100% {
-        bottom: 0;
-    }
+    0% { bottom: 0; }
+    50% { bottom: 5px; }
+    100% { bottom: 0; }
 }
 
 
@@ -296,7 +274,6 @@ article {
     color: #fff;
     background: #212121;
 }
-
 
 .article-text {
     display: block;
