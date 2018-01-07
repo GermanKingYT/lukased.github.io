@@ -10,4 +10,4 @@ Disallow: /img
 User-agent: Twitterbot
 Disallow: *
 
-Allow: /img
+Allow: /img/avatar/avatar.jpg
