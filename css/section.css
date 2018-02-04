@@ -1,16 +1,70 @@
 /* </> Lukas Eder */
 
+
+section {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+article {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+
+.title {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px 0 5px;
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #fff;
+    background: #212121;
+}
+
+.content {
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 26px;
+    color: #212121;
+    hyphens: manual;
+}
+
+.content>a {
+    color: #1A237E;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 26px;
+        font-weight: normal;
+    }
+
+    .content {
+        display: block;
+        margin: 10px 0 0 0;
+        font-size: 24px;
+        color: #222;
+    }
+}
+
 section#who {
-    background: url("../img/background/who.png") no-repeat right center;
+    background: url("../img/section/who.png") no-repeat right center;
     animation: bg-move 4s infinite;
 }
 
 section#what {
-    background: url("../img/background/what.png") no-repeat right center;
+    background: url("../img/section/what.png") no-repeat right center;
 }
 
 section#where {
-    background: url("../img/background/where.png") no-repeat right center;
+    background: url("../img/section/where.png") no-repeat right center;
 }
 
 @media only screen and (max-width: 768px) {
