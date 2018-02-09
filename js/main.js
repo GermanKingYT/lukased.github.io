@@ -27,6 +27,18 @@ $(document).ready(function () {
         $('.cookie').remove();
     });
 
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > $(window).height()) {
+            $(".header-navbar").css("background" , "rgba(26, 35, 126, 0.1)");
+        }
+
+        else{
+
+            $(".header-navbar").css("background" , "transparent");
+        }
+    });
+
     /* -- @menu --*/
 
     $('.menu-show').click(function () {
