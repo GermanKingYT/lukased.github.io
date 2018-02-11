@@ -30,7 +30,7 @@ $(document).ready(function () {
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         if (scroll > $(window).height()) {
-            $(".header-navbar").css("background" , "rgba(26, 35, 126, 0.1)");
+            $(".header-navbar").css("background" , "#1A237E");
         }
 
         else{
@@ -49,6 +49,10 @@ $(document).ready(function () {
         $('.menu').animate({right: '-100%'},{duration: 250});
     });
 
+    $('a').click(function(){
+        $('.menu').animate({right: '-100%'},{duration: 250});
+    });
+
     /* -- @scroll -- */
 
     $('a').click(function(){
@@ -57,42 +61,5 @@ $(document).ready(function () {
         }, 500);
     });
 
-    /* -- @highlight -- */
 
-    var menuHighlightElements = $('.menu-nav ul li a');
-
-    var menuHighlightCurrent = 0;
-    var menuHighlightTop;
-
-    var menuHighlightObject = $(menuHighlightElements[0]);
-    menuHighlightObject.addClass('menu-highlight');
-
-    $(window).scroll(function(){
-
-        for(var i = 0; i < menuHighlightElements.length;i++) {
-
-            var menuHighlightLink = $(menuHighlightElements[i]).attr('href');
-
-            if($(menuHighlightLink).length){
-                menuHighlightTop = $(menuHighlightLink).offset().top;
-            }
-
-            var UD_SCROLL_TOP = $(window).scrollTop();
-            var menuHighlightDif = Math.abs(UD_SCROLL_TOP - menuHighlightTop);
-
-            if(i === 0) {
-                menuHighlightCurrent = menuHighlightDif;
-                menuHighlightObject = $(menuHighlightElements[i]);
-                $('nav ul li a').removeClass('menu-highlight');
-                menuHighlightObject.addClass('menu-highlight');
-            } else {
-                if(menuHighlightDif < menuHighlightCurrent || menuHighlightDif === menuHighlightCurrent) {
-                    menuHighlightCurrent = menuHighlightDif;
-                    menuHighlightObject = $(menuHighlightElements[i]);
-                    $('nav ul li a').removeClass('menu-highlight');
-                    menuHighlightObject.addClass('menu-highlight');
-                }
-            }
-        }
-    });
 });
