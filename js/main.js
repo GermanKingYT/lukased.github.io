@@ -57,7 +57,7 @@ $(document).ready(function () {
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                $('.header-navbar').animate({top: "0"}, {duration: 250});
+                $('.header-navbar').animate({top: "0"}, {duration: 300});
             }
         }
 

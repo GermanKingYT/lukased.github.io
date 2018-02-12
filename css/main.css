@@ -86,7 +86,7 @@ a {
 
 .cookie {
     z-index: 1000;
-    position: relative;
+    position: fixed;
     display: none;
     width: 100%;
     height: auto;
