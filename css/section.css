@@ -83,7 +83,6 @@ article {
 
 .card-info>p>a {
     color: #fff;
-    text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
@@ -102,16 +101,16 @@ article {
     }
 }
 
-section#who {
+section#about {
     background: url("../img/section/who.png") no-repeat right center;
     animation: bg-move 4s infinite;
 }
 
-section#what {
+section#service {
     background: url("../img/section/what.png") no-repeat right center;
 }
 
-section#where {
+section#location {
     background: url("../img/section/where.png") no-repeat right center;
 }
 
